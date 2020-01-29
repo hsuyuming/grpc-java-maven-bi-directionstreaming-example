@@ -74,13 +74,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.proto.calculator.CalculatorOuterClass.internal_static_calculator_FindMaximumRequest_descriptor;
+    return com.proto.calculator.Calculator.internal_static_calculator_FindMaximumRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.proto.calculator.CalculatorOuterClass.internal_static_calculator_FindMaximumRequest_fieldAccessorTable
+    return com.proto.calculator.Calculator.internal_static_calculator_FindMaximumRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             com.proto.calculator.FindMaximumRequest.class, com.proto.calculator.FindMaximumRequest.Builder.class);
   }
@@ -259,13 +259,13 @@ private static final long serialVersionUID = 0L;
       com.proto.calculator.FindMaximumRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.proto.calculator.CalculatorOuterClass.internal_static_calculator_FindMaximumRequest_descriptor;
+      return com.proto.calculator.Calculator.internal_static_calculator_FindMaximumRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.proto.calculator.CalculatorOuterClass.internal_static_calculator_FindMaximumRequest_fieldAccessorTable
+      return com.proto.calculator.Calculator.internal_static_calculator_FindMaximumRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.proto.calculator.FindMaximumRequest.class, com.proto.calculator.FindMaximumRequest.Builder.class);
     }
@@ -296,7 +296,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.proto.calculator.CalculatorOuterClass.internal_static_calculator_FindMaximumRequest_descriptor;
+      return com.proto.calculator.Calculator.internal_static_calculator_FindMaximumRequest_descriptor;
     }
 
     @java.lang.Override

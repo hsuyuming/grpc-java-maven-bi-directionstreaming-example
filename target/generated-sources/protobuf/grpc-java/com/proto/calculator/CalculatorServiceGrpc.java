@@ -20,11 +20,11 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.26.0)",
     comments = "Source: calculator.proto")
-public final class CalculatorGrpc {
+public final class CalculatorServiceGrpc {
 
-  private CalculatorGrpc() {}
+  private CalculatorServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "calculator.Calculator";
+  public static final String SERVICE_NAME = "calculator.CalculatorService";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.proto.calculator.FindMaximumRequest,
@@ -38,10 +38,10 @@ public final class CalculatorGrpc {
   public static io.grpc.MethodDescriptor<com.proto.calculator.FindMaximumRequest,
       com.proto.calculator.FindMaximumResponse> getFindMaximumMethod() {
     io.grpc.MethodDescriptor<com.proto.calculator.FindMaximumRequest, com.proto.calculator.FindMaximumResponse> getFindMaximumMethod;
-    if ((getFindMaximumMethod = CalculatorGrpc.getFindMaximumMethod) == null) {
-      synchronized (CalculatorGrpc.class) {
-        if ((getFindMaximumMethod = CalculatorGrpc.getFindMaximumMethod) == null) {
-          CalculatorGrpc.getFindMaximumMethod = getFindMaximumMethod =
+    if ((getFindMaximumMethod = CalculatorServiceGrpc.getFindMaximumMethod) == null) {
+      synchronized (CalculatorServiceGrpc.class) {
+        if ((getFindMaximumMethod = CalculatorServiceGrpc.getFindMaximumMethod) == null) {
+          CalculatorServiceGrpc.getFindMaximumMethod = getFindMaximumMethod =
               io.grpc.MethodDescriptor.<com.proto.calculator.FindMaximumRequest, com.proto.calculator.FindMaximumResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "FindMaximum"))
@@ -50,7 +50,7 @@ public final class CalculatorGrpc {
                   com.proto.calculator.FindMaximumRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.proto.calculator.FindMaximumResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new CalculatorMethodDescriptorSupplier("FindMaximum"))
+              .setSchemaDescriptor(new CalculatorServiceMethodDescriptorSupplier("FindMaximum"))
               .build();
         }
       }
@@ -61,50 +61,50 @@ public final class CalculatorGrpc {
   /**
    * Creates a new async stub that supports all call types for the service
    */
-  public static CalculatorStub newStub(io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<CalculatorStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<CalculatorStub>() {
+  public static CalculatorServiceStub newStub(io.grpc.Channel channel) {
+    io.grpc.stub.AbstractStub.StubFactory<CalculatorServiceStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<CalculatorServiceStub>() {
         @java.lang.Override
-        public CalculatorStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new CalculatorStub(channel, callOptions);
+        public CalculatorServiceStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new CalculatorServiceStub(channel, callOptions);
         }
       };
-    return CalculatorStub.newStub(factory, channel);
+    return CalculatorServiceStub.newStub(factory, channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
-  public static CalculatorBlockingStub newBlockingStub(
+  public static CalculatorServiceBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<CalculatorBlockingStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<CalculatorBlockingStub>() {
+    io.grpc.stub.AbstractStub.StubFactory<CalculatorServiceBlockingStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<CalculatorServiceBlockingStub>() {
         @java.lang.Override
-        public CalculatorBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new CalculatorBlockingStub(channel, callOptions);
+        public CalculatorServiceBlockingStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new CalculatorServiceBlockingStub(channel, callOptions);
         }
       };
-    return CalculatorBlockingStub.newStub(factory, channel);
+    return CalculatorServiceBlockingStub.newStub(factory, channel);
   }
 
   /**
    * Creates a new ListenableFuture-style stub that supports unary calls on the service
    */
-  public static CalculatorFutureStub newFutureStub(
+  public static CalculatorServiceFutureStub newFutureStub(
       io.grpc.Channel channel) {
-    io.grpc.stub.AbstractStub.StubFactory<CalculatorFutureStub> factory =
-      new io.grpc.stub.AbstractStub.StubFactory<CalculatorFutureStub>() {
+    io.grpc.stub.AbstractStub.StubFactory<CalculatorServiceFutureStub> factory =
+      new io.grpc.stub.AbstractStub.StubFactory<CalculatorServiceFutureStub>() {
         @java.lang.Override
-        public CalculatorFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-          return new CalculatorFutureStub(channel, callOptions);
+        public CalculatorServiceFutureStub newStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
+          return new CalculatorServiceFutureStub(channel, callOptions);
         }
       };
-    return CalculatorFutureStub.newStub(factory, channel);
+    return CalculatorServiceFutureStub.newStub(factory, channel);
   }
 
   /**
    */
-  public static abstract class CalculatorImplBase implements io.grpc.BindableService {
+  public static abstract class CalculatorServiceImplBase implements io.grpc.BindableService {
 
     /**
      */
@@ -128,16 +128,16 @@ public final class CalculatorGrpc {
 
   /**
    */
-  public static final class CalculatorStub extends io.grpc.stub.AbstractAsyncStub<CalculatorStub> {
-    private CalculatorStub(
+  public static final class CalculatorServiceStub extends io.grpc.stub.AbstractAsyncStub<CalculatorServiceStub> {
+    private CalculatorServiceStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected CalculatorStub build(
+    protected CalculatorServiceStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-      return new CalculatorStub(channel, callOptions);
+      return new CalculatorServiceStub(channel, callOptions);
     }
 
     /**
@@ -151,31 +151,31 @@ public final class CalculatorGrpc {
 
   /**
    */
-  public static final class CalculatorBlockingStub extends io.grpc.stub.AbstractBlockingStub<CalculatorBlockingStub> {
-    private CalculatorBlockingStub(
+  public static final class CalculatorServiceBlockingStub extends io.grpc.stub.AbstractBlockingStub<CalculatorServiceBlockingStub> {
+    private CalculatorServiceBlockingStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected CalculatorBlockingStub build(
+    protected CalculatorServiceBlockingStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-      return new CalculatorBlockingStub(channel, callOptions);
+      return new CalculatorServiceBlockingStub(channel, callOptions);
     }
   }
 
   /**
    */
-  public static final class CalculatorFutureStub extends io.grpc.stub.AbstractFutureStub<CalculatorFutureStub> {
-    private CalculatorFutureStub(
+  public static final class CalculatorServiceFutureStub extends io.grpc.stub.AbstractFutureStub<CalculatorServiceFutureStub> {
+    private CalculatorServiceFutureStub(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected CalculatorFutureStub build(
+    protected CalculatorServiceFutureStub build(
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
-      return new CalculatorFutureStub(channel, callOptions);
+      return new CalculatorServiceFutureStub(channel, callOptions);
     }
   }
 
@@ -186,10 +186,10 @@ public final class CalculatorGrpc {
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.BidiStreamingMethod<Req, Resp> {
-    private final CalculatorImplBase serviceImpl;
+    private final CalculatorServiceImplBase serviceImpl;
     private final int methodId;
 
-    MethodHandlers(CalculatorImplBase serviceImpl, int methodId) {
+    MethodHandlers(CalculatorServiceImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -217,32 +217,32 @@ public final class CalculatorGrpc {
     }
   }
 
-  private static abstract class CalculatorBaseDescriptorSupplier
+  private static abstract class CalculatorServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
-    CalculatorBaseDescriptorSupplier() {}
+    CalculatorServiceBaseDescriptorSupplier() {}
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.proto.calculator.CalculatorOuterClass.getDescriptor();
+      return com.proto.calculator.Calculator.getDescriptor();
     }
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
-      return getFileDescriptor().findServiceByName("Calculator");
+      return getFileDescriptor().findServiceByName("CalculatorService");
     }
   }
 
-  private static final class CalculatorFileDescriptorSupplier
-      extends CalculatorBaseDescriptorSupplier {
-    CalculatorFileDescriptorSupplier() {}
+  private static final class CalculatorServiceFileDescriptorSupplier
+      extends CalculatorServiceBaseDescriptorSupplier {
+    CalculatorServiceFileDescriptorSupplier() {}
   }
 
-  private static final class CalculatorMethodDescriptorSupplier
-      extends CalculatorBaseDescriptorSupplier
+  private static final class CalculatorServiceMethodDescriptorSupplier
+      extends CalculatorServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
     private final String methodName;
 
-    CalculatorMethodDescriptorSupplier(String methodName) {
+    CalculatorServiceMethodDescriptorSupplier(String methodName) {
       this.methodName = methodName;
     }
 
@@ -257,11 +257,11 @@ public final class CalculatorGrpc {
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
     io.grpc.ServiceDescriptor result = serviceDescriptor;
     if (result == null) {
-      synchronized (CalculatorGrpc.class) {
+      synchronized (CalculatorServiceGrpc.class) {
         result = serviceDescriptor;
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-              .setSchemaDescriptor(new CalculatorFileDescriptorSupplier())
+              .setSchemaDescriptor(new CalculatorServiceFileDescriptorSupplier())
               .addMethod(getFindMaximumMethod())
               .build();
         }

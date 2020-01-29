@@ -1,12 +1,12 @@
 package com.github.abehsu.grpc.calculator.server;
 
-import com.proto.calculator.CalculatorGrpc;
+import com.proto.calculator.CalculatorServiceGrpc;
 import com.proto.calculator.FindMaximumRequest;
 import com.proto.calculator.FindMaximumResponse;
 import io.grpc.stub.StreamObserver;
 
 
-public class CalculatorServiceImpl extends CalculatorGrpc.CalculatorImplBase {
+public class CalculatorServiceImpl extends CalculatorServiceGrpc.CalculatorServiceImplBase {
 //    @Override
 //    public StreamObserver<FindMaximumRequest> findMaximum(StreamObserver<FindMaximumResponse> responseObserver) {
 //        StreamObserver<FindMaximumRequest> requestObserver = new StreamObserver<FindMaximumRequest>() {

@@ -3,8 +3,8 @@
 
 package com.proto.calculator;
 
-public final class CalculatorOuterClass {
-  private CalculatorOuterClass() {}
+public final class Calculator {
+  private Calculator() {}
   public static void registerAllExtensions(
       com.google.protobuf.ExtensionRegistryLite registry) {
   }
@@ -35,11 +35,11 @@ public final class CalculatorOuterClass {
     java.lang.String[] descriptorData = {
       "\n\020calculator.proto\022\ncalculator\"$\n\022FindMa" +
       "ximumRequest\022\016\n\006number\030\001 \001(\005\")\n\023FindMaxi" +
-      "mumResponse\022\022\n\nmax_number\030\001 \001(\0052b\n\nCalcu" +
-      "lator\022T\n\013FindMaximum\022\036.calculator.FindMa" +
-      "ximumRequest\032\037.calculator.FindMaximumRes" +
-      "ponse\"\000(\0010\001B\030\n\024com.proto.calculatorP\001b\006p" +
-      "roto3"
+      "mumResponse\022\022\n\nmax_number\030\001 \001(\0052i\n\021Calcu" +
+      "latorService\022T\n\013FindMaximum\022\036.calculator" +
+      ".FindMaximumRequest\032\037.calculator.FindMax" +
+      "imumResponse\"\000(\0010\001B\030\n\024com.proto.calculat" +
+      "orP\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

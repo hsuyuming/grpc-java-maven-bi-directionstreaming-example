@@ -1,6 +1,6 @@
 package com.github.abehsu.grpc.calculator.client;
 
-import com.proto.calculator.CalculatorGrpc;
+import com.proto.calculator.CalculatorServiceGrpc;
 import com.proto.calculator.FindMaximumRequest;
 import com.proto.calculator.FindMaximumResponse;
 import io.grpc.ManagedChannel;
@@ -29,7 +29,7 @@ public class CalculatorClient {
 
         CountDownLatch latch = new CountDownLatch(1);
 
-        CalculatorGrpc.CalculatorStub asyncClient = CalculatorGrpc.newStub(channel);
+        CalculatorServiceGrpc.CalculatorServiceStub asyncClient = CalculatorServiceGrpc.newStub(channel);
 
         StreamObserver<FindMaximumRequest> requestObserver =  asyncClient.findMaximum(new StreamObserver<FindMaximumResponse>() {
             @Override
